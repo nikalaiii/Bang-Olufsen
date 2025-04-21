@@ -1,5 +1,5 @@
-@import 'variables';
-@import 'mixins';
+@import "variables";
+@import "mixins";
 
 /* #region GENERAL */
 .page {
@@ -10,7 +10,7 @@
   width: 100%;
   margin: 0;
   padding: 0;
-  
+
   &:has(.page__menu:target) {
     overflow: hidden;
   }
@@ -24,14 +24,22 @@
   margin: 0;
   width: 100%;
   padding: 0;
-  
 }
 
 img {
-  transition: all $animation-speed ease;
+
   &:hover {
-    transform: scale(1.1);
+    transform: scale(calc($element-scale-value - 0.1));
   }
+}
+
+article {
+  cursor: pointer;
+}
+
+.photo-viewport {
+  width: 100%;
+  overflow: hidden;
 }
 
 footer {
@@ -45,7 +53,7 @@ footer {
 /* #region HEADER */
 
 .header {
-  background-image: url('../images/image.site.png');
+  background-image: url("../images/image.site.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -92,13 +100,13 @@ footer {
     &-icon--menu {
       @include set-icon;
 
-      background-image: url('../images/icons/Icon-Burger-menu.png');
+      background-image: url("../images/icons/Icon-Burger-menu.png");
       background-position: center;
 
       @include on-desktop {
         &:hover {
           transform: scale($element-scale-value);
-          background-image: url('../images/icons/Icon-Burger-menu-HOVER.png');
+          background-image: url("../images/icons/Icon-Burger-menu-HOVER.png");
         }
       }
     }
@@ -109,11 +117,11 @@ footer {
       display: flex;
       align-items: center;
       position: relative;
-      background-image: url('../images/icons/Icon-Phone-call.png');
+      background-image: url("../images/icons/Icon-Phone-call.png");
 
       @include on-desktop {
         &::after {
-          content: '+1 234 555-55-55';
+          content: "+1 234 555-55-55";
           font-family: Inter, sans-serif;
           font-size: 12px;
           font-weight: $text-weight;
@@ -204,10 +212,14 @@ footer {
     @include set-icon;
 
     display: block;
-    background-image: url('../images/icons/Icon-Close.png');
+    background-image: url("../images/icons/Icon-Close.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
+    &:hover {
+      transform: scale($element-scale-value);
+    }
   }
 }
 
@@ -245,7 +257,7 @@ footer {
     position: relative;
 
     &::after {
-      content: '';
+      content: "";
       background-color: $text-color;
       display: block;
       width: 100%;
@@ -386,6 +398,7 @@ footer {
 
   &__link {
     @include on-tablet {
+      overflow: hidden;
       grid-column: span 3;
     }
 
@@ -445,7 +458,7 @@ footer {
   }
 
   &__image {
-    background-image: url('../images/about-image.png');
+    background-image: url("../images/about-image.png");
 
     box-sizing: border-box;
     background-size: cover;
@@ -554,7 +567,7 @@ footer {
 
       &:hover {
         background-color: $input-color;
-        transform: scale($element-scale-value);
+        text-decoration: underline;
       }
     }
 
@@ -570,7 +583,7 @@ footer {
 
       &:hover {
         background-color: $input-color;
-        transform: scale($element-scale-value);
+        text-decoration: underline;
       }
     }
   }
@@ -625,8 +638,7 @@ button {
   font-size: 16px;
   font-weight: 700;
   grid-column: 1 / -1;
-  
-  
+
   &:hover {
     background-color: $button-hover-color;
   }
