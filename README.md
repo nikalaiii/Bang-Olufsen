@@ -1,41 +1,65 @@
-This project is a landing page created to present a company specializing in high-quality audio equipment. The company offers a range of products including speakers, headphones, and audio accessories. The goal of the page is to introduce users to the brand and its product line. It highlights the company’s commitment to premium sound and modern design.
+# 🎧 Bang & Olufsen Landing Page
 
---LIVE DEMO--
+**A modern, responsive landing page designed to showcase a company specializing in high-quality audio equipment, including speakers, headphones, and audio accessories. The project emphasizes premium sound, elegant aesthetics, and user engagement through smooth animations and interactive elements.
 
-    Experience the live website: https://nikalaiii.github.io/Bang-Olufsen/
+## 🔗 Live Demo
 
---BASE DESIGN--
+👉 [View the live website](https://nikalaiii.github.io/Bang-Olufsen/)
 
-    This page was built based on the design: https://www.figma.com/design/DtkQmQ797hk0nI4KfMi2Uq/BOSE-New-Version
+## 🎨 Design Reference
 
---TECHNOLOGIES USED--
+Based on the original Figma design:
 
-    The project is built using HTML, CSS, and SCSS for structured and maintainable styling. Gulp is used as the task runner to automate development workflows. ESLint and Prettier are integrated to ensure consistent code style and quality throughout the project.
+📐 [BOSE New Version – Figma](https://www.figma.com/design/DtkQmQ797hk0nI4KfMi2Uq/BOSE-New-Version)
 
---SET-UP LOCALY--
+---
 
-1. Clone the repository:
+## 🛠️ Technologies Used
 
---> git clone https://github.com/your-username/project-name.git
+- **HTML5**
 
---> cd Bang-Olufsen
+- **CSS3 / SCSS** – modular and maintainable styles
 
-2. Install dependencies:
+- **Gulp** – task automation and live reloading
 
---> npm install
+- **ESLint & Prettier** – code linting and formatting for consistency
 
+---
+
+## 🚀 Getting Started Locally
+
+Follow these steps to run the project on your machine:
+
+Clone the repository
+
+```bash
+git clone https://github.com/your-username/project-name.git
+cd Bang-Olufsen
+Install dependencies
+
+```
+
+```bash
+npm install
+#or
+yarn install
+
+```
+Start the development server
+
+```bash
+npm start
 # or
+yarn start
+```
 
---> yarn install
+## 🌟 Project Features
+📱 Responsive design across all screen sizes
 
-3. Run the project locally:
+🎞️ Smooth animations for a modern user experience
 
---> npm start
+🧩 Interactive elements that enhance engagement
 
-# or
+⚡ Optimized performance with clean and structured codebase
 
---> yarn start
-
---PROJECT FEATURES--
-
-The project features responsive design with flexible layout adaptation across all screen sizes. Smooth animations enhance the user experience, while interactive elements respond to user actions. The codebase is optimized for performance and maintainability, ensuring fast load times and efficient rendering.
+🔧 Maintainable architecture for scalability and team collaboration
