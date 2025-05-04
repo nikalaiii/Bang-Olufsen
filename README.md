@@ -1,6 +1,6 @@
 # 🎧 Bang & Olufsen Landing Page
 
-**A modern, responsive landing page designed to showcase a company specializing in high-quality audio equipment, including speakers, headphones, and audio accessories. The project emphasizes premium sound, elegant aesthetics, and user engagement through smooth animations and interactive elements.
+A modern, responsive landing page designed to showcase a company specializing in high-quality audio equipment, including speakers, headphones, and audio accessories. The project emphasizes premium sound, elegant aesthetics, and user engagement through smooth animations and interactive elements.
 
 ## 🔗 Live Demo
 
@@ -35,9 +35,10 @@ Clone the repository
 ```bash
 git clone https://github.com/your-username/project-name.git
 cd Bang-Olufsen
-Install dependencies
 
 ```
+
+Install dependencies
 
 ```bash
 npm install
